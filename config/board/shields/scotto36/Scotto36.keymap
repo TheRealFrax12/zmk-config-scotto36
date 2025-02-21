@@ -1,28 +1,26 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include "keys_it.h"
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             bindings = <
-                &kp KP_N31    &kp KP_N32    &kp KP_N33    &kp KP_N34    &kp KP_N35    &kp KP_N36    &kp KP_N37    &kp KP_N38    &kp KP_N29    &kp KP_N40
-                &kp KP_N21    &kp KP_N22    &kp KP_N23    &kp KP_N24    &kp KP_N25    &kp KP_N26    &kp KP_N27    &kp KP_N28    &kp KP_N29    &kp KP_N30
-                &kp KP_N11    &kp KP_N12    &kp KP_N13    &kp KP_N14    &kp KP_N15    &kp KP_N16    &kp KP_N17    &kp KP_N18    &kp KP_N19    &kp KP_N20
-                                            &kp KP_N3    &kp KP_N4    &kp KP_N5    &kp KP_N6    &kp KP_N7    &kp KP_N8
-            >;   
+&kp Q  &kp W  &kp F      &kp P           &kp G      &kp J          &kp L  &kp U      &kp Y       &kp SEMICOLON
+&kp A  &kp R  &kp S      &kp T           &kp D      &kp H          &kp N  &kp E      &kp I       &kp O
+&kp Z  &kp X  &kp C      &kp V           &kp B      &kp K          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+              &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE  &kp BACKSPACE  &none  &none
+            >;
         };
 
-        bt_layer {
+        symbol_num {
             bindings = <
-                &none            &none            &none            &none            &none            &none            &none            &none            &none            &none
-                &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_CLR       &bootloader      &none            &none            &none            &none            &none
-                &none            &none            &none            &none            &none            &none            &none            &none            &none            &none
-                                                  &none            &none            &none            &none            &none            &none
-            >;        
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7  &kp N8  &kp N9            &kp N0
+&kp           &kp           &kp           &kp           &kp     &kp           &kp     &kp     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp           &kp           &kp           &kp           &kp     &kp           &kp     &kp     &kp SQT           &kp BACKSLASH
+                            &kp           &kp           &kp     &kp           &kp     &kp
+            >;
         };
     };
 };
