@@ -1,5 +1,6 @@
 #include "keys_it.h"
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -8,19 +9,10 @@
 
         default {
             bindings = <
-&kp Q  &kp W  &kp F      &kp P           &kp G      &kp J          &kp L  &kp U      &kp Y       &kp SEMICOLON
-&kp A  &kp R  &kp S      &kp T           &kp D      &kp H          &kp N  &kp E      &kp I       &kp O
-&kp Z  &kp X  &kp C      &kp V           &kp B      &kp K          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-              &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE  &kp BACKSPACE  &none  &none
-            >;
-        };
-
-        sym_num {
-            bindings = <
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&kp              &kp              &kp              &kp              &kp              &kp              &kp              &kp              &kp              &kp
-&kp              &kp              &kp              &kp              &kp              &kp              &kp              &kp              &kp              &kp
-                                  &kp              &kp              &kp              &kp              &kp              &kp
+&kp Q  &kp W  &kp F         &kp P           &kp G      &kp J          &kp L         &kp U       &kp Y       &kp SEMICOLON
+&kp A  &kp R  &kp S         &kp T           &kp D      &kp H          &kp N         &kp E       &kp I       &kp O
+&kp Z  &kp X  &kp C         &kp V           &kp B      &kp K          &kp M         &kp COMMA   &kp PERIOD  &kp SLASH
+              &bt BT_SEL 0  &kp LEFT_SHIFT  &kp SPACE  &kp BACKSPACE  &kp CAPSLOCK  &bt BT_CLR
             >;
         };
     };
