@@ -1,2 +1,0 @@
-config SHIELD_SCOTTO36
-    def_bool $(shields_list_contains, Scotto36)
